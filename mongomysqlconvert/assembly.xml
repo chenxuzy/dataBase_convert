@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly>
+	<baseDirectory>UpdateTools</baseDirectory>
+	<formats>
+		<format>tar.gz</format>
+		<format>dir</format>
+	</formats>
+	<includeBaseDirectory>true</includeBaseDirectory>
+	<fileSets>
+		<fileSet>
+            <directory>target/appassembler</directory>
+            <outputDirectory>database_convert</outputDirectory>
+        </fileSet>
+		<fileSet>
+			<directory>../mongodb-to-mysql</directory>
+			<outputDirectory>dbscript</outputDirectory>
+		</fileSet>
+	</fileSets>
+</assembly>
