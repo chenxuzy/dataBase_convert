@@ -3,7 +3,7 @@
     "former":"mv_ring",
     "latter":"mv_ring",
     "change":{
-      "_id":"id"
+      "bizid":"id"
     } //描述字段改变对应关系
   }]
 }

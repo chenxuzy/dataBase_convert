@@ -1,4 +1,5 @@
-package mongodb.iflytek.com;
+package com.iflytek.mongodb_mysql;
 
 public interface DataBase {
+
 }

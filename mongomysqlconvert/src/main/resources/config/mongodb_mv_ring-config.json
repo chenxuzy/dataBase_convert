@@ -1,13 +1,37 @@
 {
-  "host":"192.168.57.228",
-  "port":27017,
-  "database":"kuyin",
-  "collections":[{
-    "name":"mv_ring",
-    "include":[{
-      "name":"",
-      "type":"",
-      "null":false
-    }] //key:keyType
-  }]
+  "host": "192.168.57.228",
+  "port": 27017,
+  "database": "kuyin",
+  "collection":
+    {
+      "name": "mv_ring",
+      "include": [
+        "bizid",
+        "title",
+        "ringid",
+        "ringname",
+        "ringusername",
+        "userid",
+        "username",
+        "labels",
+        "source",
+        "vipstate",
+        "duration",
+        "fire",
+        "commentcount",
+        "auditlevel",
+        "flower",
+        "score",
+        "desc",
+        "createdtime",
+        "updatedtime",
+        "status",
+        "sourceprice",
+        "type",
+        "calloutset",
+        "callinset",
+        "isprivate",
+        "collect"
+      ]
+    }
 }

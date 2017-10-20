@@ -1,4 +1,4 @@
-package mongodb.iflytek.com;
+package com.iflytek.mongodb_mysql;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoCredential;
@@ -45,4 +45,5 @@ public class MongoDB implements DataBase {
             System.err.println(e.getClass().getName() + " : " + e.getMessage());
         }
     }
+
 }

@@ -1,12 +1,156 @@
 {
-  "host":"192.168.45.170",
-  "port":27017,
-  "database":"kuyin",
-  "username":"",
-  "password":"",
-  "tables":[{
-    "name":"mv_ring"
-    //"include":[{}] //key:keyType 默认与相对的字段个数相等
-
-  }]
+  "host": "192.168.160.133",
+  "port": 3306,
+  "database": "kuyin_mv_ring",
+  "username": "root",
+  "password": "123456",
+  "tables": [
+    {
+      "name": "mv_ring",
+      "include": [
+        {
+          "column": "bizid",
+          "type": "String",
+          "required": true,
+          "comment":"mv 唯一标识"
+        },
+        {
+          "column": "labels",
+          "type": "String",
+          "required": false,
+          "default":null
+        },
+        {
+          "column": "userid",
+          "type": "String",
+          "required": true
+        },
+        {
+          "column": "ringid",
+          "type": "String",
+          "required": true
+        },
+        {
+          "column": "title",
+          "type": "String",
+          "required": true
+        },
+        {
+          "column": "source",
+          "type": "String",
+          "required": true
+        },
+        {
+          "column": "username",
+          "type": "String",
+          "required": true
+        },
+        {
+          "column": "vipstate",
+          "type": "Integer",
+          "required": true
+        },
+        {
+          "column": "duration",
+          "type": "Long",
+          "required": true
+        },
+        {
+          "column": "url",
+          "type": "String",
+          "required": true
+        },
+        {
+          "column": "audiourl",
+          "type": "String",
+          "required": true
+        },
+        {
+          "column": "flower",
+          "type": "Integer",
+          "required": true
+        },
+        {
+          "column": "fire",
+          "type": "Integer",
+          "required": true
+        },
+        {
+          "column": "commentcount",
+          "type": "Integer",
+          "required": true
+        },
+        {
+          "column": "auditlevel",
+          "type": "Integer",
+          "required": true
+        },
+        {
+          "column": "score",
+          "type": "Integer",
+          "required": true
+        },
+        {
+          "column": "desc",
+          "type": "String",
+          "required": true
+        },
+        {
+          "column": "createdtime",
+          "type": "Long",
+          "required": true
+        },
+        {
+          "column": "updatedtime",
+          "type": "Long",
+          "required": true
+        },
+        {
+          "column": "status",
+          "type": "Integer",
+          "required": true
+        },
+        {
+          "column": "sourceprice",
+          "type": "Integer",
+          "required": true
+        },
+        {
+          "column": "type",
+          "type": "Integer",
+          "required": true
+        },
+        {
+          "column": "ringname",
+          "type": "String",
+          "required": true
+        },
+        {
+          "column": "ringusername",
+          "type": "String",
+          "required": true
+        },
+        {
+          "column": "calloutset",
+          "type": "Integer",
+          "required": true
+        },
+        {
+          "column": "callinset",
+          "type": "Integer",
+          "required": true
+        },
+        {
+          "column": "isprivate",
+          "type": "Integer",
+          "required": true
+        },
+        {
+          "column": "collect",
+          "type": "Integer",
+          "required": true
+        }
+      ]
+    }
+  ]
 }

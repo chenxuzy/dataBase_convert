@@ -1,4 +1,4 @@
-package mongodb.iflytek.com;
+package com.iflytek.mongodb_mysql;
 
 import org.json.JSONObject;
 

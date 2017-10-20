@@ -25,10 +25,13 @@ public class LoadConfig {
           JSONObject json = new JSONObject(load(filepath));
           return json;
       }catch (IOException e){
+          e.printStackTrace();
         return null;
       }catch (JSONException e){
+          e.printStackTrace();
           return null;
       }catch (Exception e){
+          e.printStackTrace();
           return  null;
       }
 

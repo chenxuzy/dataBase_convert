@@ -1,7 +1,9 @@
 package com.iflytek.mongodb_mysql;
 
+
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Map;
 
@@ -18,10 +20,10 @@ public class MysqlDBJDBC {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Map<String ,String> mysql = LoadConfig.getConfig(MYSQL);
-           // System.out.println() + mysql.get(USERNAME) +mysql.get(PASSWORD));
-            String url= "jdbc:mysql://"+mysql.get(SERVER)+"/"+mysql.get(DATABASE)+"?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true";
+            String url= "jdbc:mysql://"+mysql.get(SERVER)+"/"+mysql.get(DATABASE)+"?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&rewriteBatchedStatements=true";
             conn = DriverManager.getConnection(
                     url, mysql.get(USERNAME), mysql.get(PASSWORD)) ;
+           PreparedStatement stmt =  conn.prepareStatement("");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
