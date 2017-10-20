@@ -1,0 +1,11 @@
+{
+  "convert":[{
+    "formerDatabase":{
+      "config":"mongodb_mv_ring"
+    },
+    "latterDatabase":{
+      "config":"mysql_mv_ring"
+    },
+    "relationship":"mv_ring_relationship"
+  }]
+}
