@@ -70,9 +70,9 @@ public class MySqlDB implements DataBase {
         if (!loaded)
             throw new ClassNotFoundException("mysql Driver loaded failed");
         try {
-            String url= "jdbc:mysql://"+this.jsonConf.getString(SERVER)+":"+this.jsonConf.getInt(PORT)+"/"+this.jsonConf.getString(DATABASE)+"?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&rewriteBatchedStatements=true";
+            String url = "jdbc:mysql://" + this.jsonConf.getString(SERVER) + ":" + this.jsonConf.getInt(PORT) + "/" + this.jsonConf.getString(DATABASE) + "?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&rewriteBatchedStatements=true";
 
-            conn = DriverManager.getConnection( url ,
+            conn = DriverManager.getConnection(url,
                     this.jsonConf.getString(USERNAME) == null ? "" : this.jsonConf.getString(USERNAME),
                     this.jsonConf.getString(PASSWORD) == null ? "" : this.jsonConf.getString(PASSWORD));
         } catch (SQLException e) {
@@ -83,5 +83,15 @@ public class MySqlDB implements DataBase {
 
     public Connection getConnecttion() {
         return conn;
+    }
+
+    public void close() { //close 之前关闭所有 Statement ；
+        if (conn != null) {
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

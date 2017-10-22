@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0416cd13-b679-4ef2-8900-bf60d7d90406" name="Default" comment="" />
+    <list default="true" id="0416cd13-b679-4ef2-8900-bf60d7d90406" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/target/classes/com/iflytek/mongodb_mysql/MVRing.class" afterPath="$PROJECT_DIR$/mongomysqlconvert/target/classes/com/iflytek/mongodb_mysql/MVRing.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/target/classes/com/iflytek/mongodb_mysql/MongoDB.class" afterPath="$PROJECT_DIR$/mongomysqlconvert/target/classes/com/iflytek/mongodb_mysql/MongoDB.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/target/classes/com/iflytek/mongodb_mysql/MySqlDB.class" afterPath="$PROJECT_DIR$/mongomysqlconvert/target/classes/com/iflytek/mongodb_mysql/MySqlDB.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/target/classes/com/iflytek/mongodb_mysql/ShareResourcePool.class" afterPath="$PROJECT_DIR$/mongomysqlconvert/target/classes/com/iflytek/mongodb_mysql/ShareResourcePool.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/target/classes/com/iflytek/mongodb_mysql/StartUp$Proudoce.class" afterPath="$PROJECT_DIR$/mongomysqlconvert/target/classes/com/iflytek/mongodb_mysql/StartUp$Proudoce.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/target/classes/com/iflytek/mongodb_mysql/StartUp.class" afterPath="$PROJECT_DIR$/mongomysqlconvert/target/classes/com/iflytek/mongodb_mysql/StartUp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/target/classes/com/iflytek/mongodb_mysql/Test.class" afterPath="$PROJECT_DIR$/mongomysqlconvert/target/classes/com/iflytek/mongodb_mysql/Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MVRing.java" afterPath="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MVRing.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MongoDB.java" afterPath="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MongoDB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MySqlDB.java" afterPath="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MySqlDB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/ShareResourcePool.java" afterPath="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/ShareResourcePool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/StartUp.java" afterPath="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/StartUp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/Test.java" afterPath="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mysql_mv_ring-config.json" afterPath="$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mysql_mv_ring-config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongomysqlconvert/target/classes/config/mysql_mv_ring-config.json" afterPath="$PROJECT_DIR$/mongomysqlconvert/target/classes/config/mysql_mv_ring-config.json" />
+    </list>
     <ignored path="$PROJECT_DIR$/mongomysqlconvert/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,31 +35,76 @@
       <file leaf-file-name="StartUp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/StartUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-162">
-              <caret line="177" column="37" lean-forward="true" selection-start-line="177" selection-start-column="37" selection-end-line="177" selection-end-column="37" />
+            <state relative-caret-position="534">
+              <caret line="230" column="36" lean-forward="false" selection-start-line="230" selection-start-column="36" selection-end-line="230" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7623#7699#0" expanded="false" />
+                <element signature="e#8871#8947#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server-config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/server-config.properties">
+      <file leaf-file-name="MysqlDBJDBC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MysqlDBJDBC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="999">
+              <caret line="41" column="3" lean-forward="false" selection-start-line="41" selection-start-column="3" selection-end-line="50" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/DataBase.java">
+      <file leaf-file-name="MongoDB.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MongoDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="1296">
+              <caret line="55" column="9" lean-forward="false" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MySqlDB.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MySqlDB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="93" column="13" lean-forward="true" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MongoDBJDBC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MongoDBJDBC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1107">
+              <caret line="50" column="5" lean-forward="false" selection-start-line="48" selection-start-column="3" selection-end-line="50" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShareResourcePool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/ShareResourcePool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="729">
+              <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+              <folding>
+                <element signature="e#572#573#0" expanded="true" />
+                <element signature="e#604#605#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#664#665#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysql_mv_ring-config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mysql_mv_ring-config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4131">
+              <caret line="153" column="5" lean-forward="false" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -51,8 +113,8 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3753">
-              <caret line="152" column="40" lean-forward="false" selection-start-line="152" selection-start-column="40" selection-end-line="152" selection-end-column="40" />
+            <state relative-caret-position="1890">
+              <caret line="83" column="26" lean-forward="false" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,61 +125,19 @@
       <file leaf-file-name="MVRing.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MVRing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1674">
-              <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+            <state relative-caret-position="1485">
+              <caret line="60" column="28" lean-forward="false" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server-config.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server-config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/server-config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/LoadConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JSONObject.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20170516/json-20170516.jar!/org/json/JSONObject.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8964">
-              <caret line="353" column="0" lean-forward="false" selection-start-line="353" selection-start-column="0" selection-end-line="353" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mongodb_mv_ring-config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mongodb_mv_ring-config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImportMysqlTask.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/ImportMysqlTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="15" column="118" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="118" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -136,6 +156,8 @@
       <find>bigint</find>
       <find>trim</find>
       <find>strip</find>
+      <find>toString</find>
+      <find>getMesasge</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,25 +177,25 @@
         <option value="$PROJECT_DIR$/mongomysqlconvert/pom.xml" />
         <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mv_ring_relationship-config.json" />
         <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MysqlDBJDBC.java" />
-        <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MongoDB.java" />
         <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/ThreadPool.java" />
         <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/DataBase.java" />
         <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/server-config.properties" />
         <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/ResourcePool.java" />
-        <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mysql_mv_ring-config.json" />
         <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mysql_mv_ring-config.properties" />
-        <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MySqlDB.java" />
         <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/Task.java" />
         <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/ImportMysqlTask.java" />
         <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/Worker.java" />
         <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/Watcher.java" />
-        <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/ShareResourcePool.java" />
-        <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MVRing.java" />
-        <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/Test.java" />
         <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/LoadConfig.java" />
         <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mongodb_mv_ring-config.json" />
-        <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/StartUp.java" />
         <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/server-config.json" />
+        <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mysql_mv_ring-config.json" />
+        <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MVRing.java" />
+        <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/Test.java" />
+        <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/ShareResourcePool.java" />
+        <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MongoDB.java" />
+        <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MySqlDB.java" />
+        <option value="$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/StartUp.java" />
       </list>
     </option>
   </component>
@@ -184,7 +206,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="569" />
     <option name="y" value="68" />
     <option name="width" value="1400" />
@@ -297,8 +319,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -362,6 +382,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
@@ -522,22 +544,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5575419" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.375419" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22707888" sideWeight="0.822695" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22921109" sideWeight="0.822695" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -548,6 +570,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -569,7 +592,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/StartUp.java</url>
-          <line>41</line>
+          <line>46</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -579,24 +602,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mongodb_mv_ring-config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="169" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mysql_mv_ring-config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4077">
-          <caret line="151" column="5" lean-forward="true" selection-start-line="151" selection-start-column="5" selection-end-line="151" selection-end-column="5" />
-          <folding>
-            <element signature="e#136#3277#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mysql_mv_ring-config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -610,7 +615,7 @@
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7623#7699#0" expanded="false" />
+            <element signature="e#8871#8947#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -712,13 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MysqlDBJDBC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="23" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Java/jdk1.8.0_144/src.zip!/java/sql/PreparedStatement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -748,20 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MongoDBJDBC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MongoDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/ResourcePool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -776,35 +760,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/3.5.0/mongo-java-driver-3.5.0.jar!/com/mongodb/client/MongoCollection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1559">
-          <caret line="67" column="28" lean-forward="false" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mysql_mv_ring-config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mysql_mv_ring-config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding>
-            <element signature="e#136#3277#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MySqlDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1863">
-          <caret line="72" column="97" lean-forward="false" selection-start-line="72" selection-start-column="97" selection-end-line="72" selection-end-column="97" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,18 +772,6 @@
         <state relative-caret-position="54">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/ShareResourcePool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#561#562#0" expanded="false" />
-            <element signature="e#588#589#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -843,9 +790,9 @@
         <state relative-caret-position="486">
           <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#540#541#0" expanded="false" />
+            <element signature="e#584#585#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -855,7 +802,7 @@
         <state relative-caret-position="243">
           <caret line="15" column="118" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="118" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -874,29 +821,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MVRing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
-          <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3753">
-          <caret line="152" column="40" lean-forward="false" selection-start-line="152" selection-start-column="40" selection-end-line="152" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/server-config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8964">
           <caret line="353" column="0" lean-forward="false" selection-start-line="353" selection-start-column="0" selection-end-line="353" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,18 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/StartUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="177" column="37" lean-forward="true" selection-start-line="177" selection-start-column="37" selection-end-line="177" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7623#7699#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -947,6 +862,109 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/3.5.0/mongo-java-driver-3.5.0.jar!/com/mongodb/client/MongoCollection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="59" column="15" lean-forward="true" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/3.5.0/mongo-java-driver-3.5.0.jar!/org/bson/conversions/Bson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_144/src.zip!/java/sql/SQLException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="38" column="59" lean-forward="false" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MVRing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="60" column="28" lean-forward="false" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/resources/config/mysql_mv_ring-config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4131">
+          <caret line="153" column="5" lean-forward="false" selection-start-line="153" selection-start-column="5" selection-end-line="153" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/ShareResourcePool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="31" column="26" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding>
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MongoDBJDBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1107">
+          <caret line="50" column="5" lean-forward="false" selection-start-line="48" selection-start-column="3" selection-end-line="50" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MongoDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="55" column="9" lean-forward="false" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MysqlDBJDBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="41" column="3" lean-forward="false" selection-start-line="41" selection-start-column="3" selection-end-line="50" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/StartUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="230" column="36" lean-forward="false" selection-start-line="230" selection-start-column="36" selection-end-line="230" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8871#8947#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="83" column="26" lean-forward="false" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongomysqlconvert/src/main/java/com/iflytek/mongodb_mysql/MySqlDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="93" column="13" lean-forward="true" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
           <folding />
         </state>
       </provider>

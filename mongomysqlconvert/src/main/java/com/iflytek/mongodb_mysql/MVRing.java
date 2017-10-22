@@ -54,9 +54,11 @@ public class MVRing {
 
     }
 
-    public static void SetInsertSql(List<String> keys) {
+    public static void SetInsertSql(String tables, List<String> keys) {
         StringBuilder buffer = new StringBuilder();
-        buffer.append("replace into mv_ring (");
+        buffer.append("insert into ");
+        buffer.append(tables);
+        buffer.append(" (");
         int index = 0;
         for (String key : keys) {
             if (index > 0)

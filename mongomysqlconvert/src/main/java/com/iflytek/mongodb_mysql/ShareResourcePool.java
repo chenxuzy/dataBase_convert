@@ -24,6 +24,14 @@ public class ShareResourcePool<T> {
         return resources.get(cursor);
     }
 
+    public List<T> getAllResource() {
+        return resources;
+    }
+
+    public void clear() {
+        resources.clear();
+    }
+
     public int getSize() {
         return size;
     }

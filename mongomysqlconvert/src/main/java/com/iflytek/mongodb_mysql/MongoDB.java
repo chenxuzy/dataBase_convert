@@ -16,13 +16,15 @@ public class MongoDB implements DataBase {
     private final static String USERNAME = "username";
     private final static String PASSWORD = "password";
     private JSONObject jsonConf;
-    private MongoDatabase _mongoInstance=null;
+    private MongoDatabase _mongoInstance;
+    private MongoClient client;
+
     public MongoDB(JSONObject json) {
         this.jsonConf = json;
         init();
     }
 
-    public MongoDatabase getMongoInstance(){
+    public MongoDatabase getMongoInstance() {
 
         return this._mongoInstance;
     }
@@ -34,16 +36,25 @@ public class MongoDB implements DataBase {
             List<ServerAddress> addrs = new ArrayList<>();
             addrs.add(serverAddress);
             List<MongoCredential> credentials = new ArrayList<>();
-            if (this.jsonConf.has(USERNAME) &&this.jsonConf.has(PASSWORD)) {
+            if (this.jsonConf.has(USERNAME) && this.jsonConf.has(PASSWORD)) {
                 MongoCredential credential = MongoCredential.createScramSha1Credential(
-                        this.jsonConf.getString(USERNAME),this.jsonConf.getString(DATABASE), this.jsonConf.getString(PASSWORD).toCharArray());
+                        this.jsonConf.getString(USERNAME), this.jsonConf.getString(DATABASE), this.jsonConf.getString(PASSWORD).toCharArray());
                 credentials.add(credential);
             }
-            MongoClient client = new MongoClient(addrs, credentials);
+            client = new MongoClient(addrs, credentials);
             this._mongoInstance = client.getDatabase(this.jsonConf.getString(DATABASE));
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + " : " + e.getMessage());
         }
+    }
+
+    public void close() {
+        try {
+            client.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
 }

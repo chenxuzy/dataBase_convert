@@ -4,7 +4,7 @@
   "database": "kuyin_mv_ring",
   "username": "root",
   "password": "123456",
-  "tables": [
+  "table":
     {
       "name": "mv_ring",
       "include": [
@@ -152,5 +152,4 @@
         }
       ]
     }
-  ]
 }

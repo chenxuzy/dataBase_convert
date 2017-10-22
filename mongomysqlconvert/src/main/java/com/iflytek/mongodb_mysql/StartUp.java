@@ -1,6 +1,8 @@
 package com.iflytek.mongodb_mysql;
 
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.Mongo;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
@@ -13,6 +15,7 @@ import java.lang.ref.WeakReference;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -32,11 +35,13 @@ public class StartUp {
     private static ArrayList<String> columns;
     private static JSONObject mysqlConfig;
     private static JSONObject mongodbConfig;
+    private static String table = "mv_ring";
     private static ShareResourcePool<MongoDB> mongoDBResourcePool;
     private static ShareResourcePool<MySqlDB> mySqlDBResourcePool;
     private static int minDataNum = 50000;
     private static int threads = 2;
     private static int step = 50000;
+    private static BasicDBObject query = new BasicDBObject();
 
     static {
         JSONObject serverConfig = LoadConfig.getConfigFromJson(SERCVER);
@@ -50,22 +55,45 @@ public class StartUp {
         for (int i = 0; i < array.length(); i++) {
             columns.add(array.getString(i));
         }
-        MVRing.SetInsertSql(columns);
+        table = mysqlConfig.getJSONObject("table").getString("name");
+        MVRing.SetInsertSql(table, columns);
+
+        query.put("isprivate", 1);
+        query.put("status", 1);
 
 
     }
 
-    public static void main(String[] args) throws NoSuchMethodException {
+    public static void main(String[] args) {
         Long end_time = java.util.Calendar.getInstance().getTimeInMillis();
         System.out.println("begin " + end_time);
         ///注意 int 最大值
         mongoDBResourcePool = new ShareResourcePool<>();
         mongoDBResourcePool.addResource(new MongoDB(mongodbConfig));
-        long size = mongoDBResourcePool.getResource().getMongoInstance().getCollection(mongodbConfig.getJSONObject(COLLECTION).getString(NAME)).count();
 
+        mySqlDBResourcePool = new ShareResourcePool<>();
+        try {
+            mySqlDBResourcePool.addResource(new MySqlDB(mysqlConfig));
+            String delete = "delete from " + table;
+            Statement stmt = mySqlDBResourcePool.getResource().getConnecttion().createStatement();
+            stmt.execute(delete);
+            stmt.close();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            System.out.println("mysql driver loaded failed");
+            return;
+        } catch (SQLException e) {
+            System.out.println("error" + e.getLocalizedMessage());
+            e.printStackTrace();
+        }
+        //String query = "{\"isprivate\":1,\"status\":1}";
+
+        long size = mongoDBResourcePool.getResource().getMongoInstance().getCollection(mongodbConfig.getJSONObject(COLLECTION).getString(NAME)).count(query);
+        //避免当数据量很少时，还是开启多线程
         long burst = size / threads;
         if (minDataNum < step)
             minDataNum = step;
+
         while (burst < minDataNum) {
             if (threads > 1) {
                 threads--;
@@ -74,13 +102,12 @@ public class StartUp {
         }
 
 
-
         for (int i = 1; i < threads; i++) {
             mongoDBResourcePool.addResource(new MongoDB(mongodbConfig));
         }
 
         mySqlDBResourcePool = new ShareResourcePool<>();
-        for (int i = 0; i < threads; i++) {
+        for (int i = 1; i < threads; i++) {
             try {
                 mySqlDBResourcePool.addResource(new MySqlDB(mysqlConfig));
             } catch (ClassNotFoundException e) {
@@ -113,6 +140,15 @@ public class StartUp {
                 e.printStackTrace();
             }
         }
+
+        for (MongoDB mongoDB : mongoDBResourcePool.getAllResource()) {
+            mongoDB.close();
+        }
+        mongoDBResourcePool.clear();
+        for (MySqlDB mySqlDB : mySqlDBResourcePool.getAllResource()) {
+            mySqlDB.close();
+        }
+        mySqlDBResourcePool.clear();
 
     }
 
@@ -170,11 +206,11 @@ public class StartUp {
         @Override
         public void run() {
             MongoCollection<Document> collection = mongoDBResourcePool.getResource().getMongoInstance().getCollection("mv_ring");
-            int num =0;
+            int num = 0;
             while (num < total) {
-                FindIterable<Document> findIterable = collection.find()
+                FindIterable<Document> findIterable = collection.find(query)
                         .projection(include(columns))
-                        .skip(start+num)
+                        .skip(start + num)
                         .limit(step);
                 MongoCursor<Document> mongoCursor = findIterable.iterator();
 
@@ -193,7 +229,6 @@ public class StartUp {
                     mvRings.add(json);
                 }
                 mongoCursor.close();
-                //Watcher.AddTask(new ImportMysqlTask(mvRings, columns, new WeakReference<>(mySqlDBResourcePool)));
                 insert(mvRings, new WeakReference<>(mySqlDBResourcePool));
                 num += step;
             }

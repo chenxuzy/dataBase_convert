@@ -33,10 +33,10 @@ public class Test {
         mysqlConfig = LoadConfig.getConfigFromJson("mysql_mv_ring");
         JSONArray array = mongodbConfig.getJSONArray(MONGODB_KEY_INCLUDE);
         ArrayList<String> c = new ArrayList<>();
-        for(int i =0 ;i < array.length() ; i++){
+        for (int i = 0; i < array.length(); i++) {
             c.add(array.getString(i));
         }
-        MVRing.SetInsertSql(columns);
+        MVRing.SetInsertSql("mv_ring", columns);
 
         mongoDBResourcePool = new ShareResourcePool<>();
 
