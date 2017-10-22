@@ -1,9 +1,0 @@
-com\iflytek\mongodb_mysql\DatabseFactary.class
-com\iflytek\mongodb_mysql\MongoDB.class
-com\iflytek\mongodb_mysql\MysqlDBJDBC.class
-com\iflytek\mongodb_mysql\DataBase.class
-com\iflytek\mongodb_mysql\MVRing.class
-com\iflytek\mongodb_mysql\StartUp.class
-com\iflytek\mongodb_mysql\MySqlDB.class
-com\iflytek\mongodb_mysql\LoadConfig.class
-com\iflytek\mongodb_mysql\MongoDBJDBC.class

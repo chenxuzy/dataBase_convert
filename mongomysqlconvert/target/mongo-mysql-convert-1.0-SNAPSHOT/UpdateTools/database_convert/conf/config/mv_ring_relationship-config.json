@@ -1,9 +1,0 @@
-{
-  "relationship":[{
-    "former":"mv_ring",
-    "latter":"mv_ring",
-    "change":{
-      "_id":"id"
-    } //描述字段改变对应关系
-  }]
-}
