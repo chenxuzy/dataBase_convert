@@ -91,6 +91,7 @@ public class StartUp {
         long size = mongoDBResourcePool.getResource().getMongoInstance().getCollection(mongodbConfig.getJSONObject(COLLECTION).getString(NAME)).count(query);
         //避免当数据量很少时，还是开启多线程
         long burst = size / threads;
+        System.out.println("zong num " + size);
         if (minDataNum < step)
             minDataNum = step;
 
@@ -126,6 +127,7 @@ public class StartUp {
                 total = size - start;
             }
             if ((total) < Integer.MAX_VALUE && start < Integer.MAX_VALUE) {
+                System.out.println("start "+start + "  total "+total);
                 Thread thread = new Thread(new Proudoce((int) start, (int) total));
                 thread.start();
                 workThreads.add(thread);
@@ -153,7 +155,7 @@ public class StartUp {
     }
 
     public static void insert(List<JSONObject> mvRings, WeakReference<ShareResourcePool<MySqlDB>> mysql) {
-        Long begin_time = java.util.Calendar.getInstance().getTimeInMillis();
+        // Long begin_time = java.util.Calendar.getInstance().getTimeInMillis();
         try {
             if (mvRings.size() > 0) {
                 Connection connection = mysql.get().getResource().getConnecttion();
@@ -186,8 +188,8 @@ public class StartUp {
                     connection.setAutoCommit(true);
                     e.printStackTrace();
                 }
-                Long end_time = java.util.Calendar.getInstance().getTimeInMillis();
-                System.out.println("current " + end_time + "  this one cost " + (end_time - begin_time));
+               // Long end_time = java.util.Calendar.getInstance().getTimeInMillis();
+              //  System.out.println("current " + end_time + "  this one cost " + (end_time - begin_time));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -220,7 +222,9 @@ public class StartUp {
                     mongoCursor.close();
                     break;
                 }
+                int count = 0;
                 while (mongoCursor.hasNext()) {
+                    count++;
                     JSONObject json = new JSONObject();
                     Document doc = mongoCursor.next();
                     Set<String> keys = doc.keySet();
@@ -229,6 +233,7 @@ public class StartUp {
                     mvRings.add(json);
                 }
                 mongoCursor.close();
+                System.out.println("begin: " + (start + num) + "   count:" + count);
                 insert(mvRings, new WeakReference<>(mySqlDBResourcePool));
                 num += step;
             }
