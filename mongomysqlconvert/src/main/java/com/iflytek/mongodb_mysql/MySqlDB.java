@@ -70,7 +70,7 @@ public class MySqlDB implements DataBase {
         if (!loaded)
             throw new ClassNotFoundException("mysql Driver loaded failed");
         try {
-            String url = "jdbc:mysql://" + this.jsonConf.getString(SERVER) + ":" + this.jsonConf.getInt(PORT) + "/" + this.jsonConf.getString(DATABASE) + "?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&rewriteBatchedStatements=true";
+            String url = "jdbc:mysql://" + this.jsonConf.getString(SERVER) + ":" + this.jsonConf.getInt(PORT) + "/" + this.jsonConf.getString(DATABASE) + "?useUnicode=true&characterEncoding=utf8&useSSL=false&autoReconnect=true&rewriteBatchedStatements=true";
 
             conn = DriverManager.getConnection(url,
                     this.jsonConf.getString(USERNAME) == null ? "" : this.jsonConf.getString(USERNAME),

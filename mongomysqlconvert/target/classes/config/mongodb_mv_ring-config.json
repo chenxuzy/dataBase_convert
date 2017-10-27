@@ -1,0 +1,15 @@
+{
+  "host": "192.168.57.228",
+  "port": 27017,
+  "database": "kuyin",
+  "collection": {
+    "name": "account",
+    "include": [
+      "bizid",
+      "name",
+      "usertype",
+      "status",
+      "black"
+    ]
+  }
+}

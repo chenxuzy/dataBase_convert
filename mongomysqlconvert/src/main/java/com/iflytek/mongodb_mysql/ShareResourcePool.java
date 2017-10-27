@@ -12,7 +12,7 @@ public class ShareResourcePool<T> {
     public ShareResourcePool() {
         resources = new ArrayList<>();
         size = 0;
-        cursor =0;
+        cursor = 0;
     }
 
     public void addResource(T resource) {
@@ -21,7 +21,9 @@ public class ShareResourcePool<T> {
     }
 
     public T getResource() {
-        int i = (cursor++% size);
+        int i = (cursor++ % size);
+        if (cursor > size)
+            cursor = 0;
         return resources.get(i);
     }
 

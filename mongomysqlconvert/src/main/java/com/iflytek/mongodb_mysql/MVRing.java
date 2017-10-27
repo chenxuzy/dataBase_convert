@@ -1,11 +1,13 @@
 package com.iflytek.mongodb_mysql;
 
 
+import com.mongodb.BasicDBObject;
 import org.json.JSONObject;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MVRing {
@@ -21,6 +23,9 @@ public class MVRing {
 //            "`calloutset`, `callinset`, `isprivate`, `collect` )   values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
     public static String insertSql = "";
+    public  static String table = "mv_ring";
+    static ArrayList<String> columns = new ArrayList<>();
+    public static BasicDBObject query = new BasicDBObject();
 
 //    public String id;
 //    public String title;
@@ -79,7 +84,7 @@ public class MVRing {
         System.out.println(insertSql);
     }
 
-    public static void insertSql(List<JSONObject> mvRings, String[] columns) throws SQLException {
+    public static void insert(List<JSONObject> mvRings, String[] columns) throws SQLException {
 
         Long begin_time = java.util.Calendar.getInstance().getTimeInMillis();
         if (mvRings.size() > 0) {

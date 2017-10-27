@@ -1,12 +1,12 @@
 {
-  "host": "192.168.160.133",
+  "host": "172.31.4.57",
   "port": 3306,
-  "database": "kuyin_mv_ring",
+  "database": "KuyinRingMV",
   "username": "root",
-  "password": "123456",
+  "password": "search@2017",
   "table":
     {
-      "name": "mv_ring",
+      "name": "account",
       "include": [
         {
           "column": "bizid",

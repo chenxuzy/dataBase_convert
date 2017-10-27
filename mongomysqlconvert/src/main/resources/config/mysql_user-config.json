@@ -1,0 +1,21 @@
+{
+  "host": "172.31.4.57",
+  "port": 3306,
+  "database": "KuyinRingMV",
+  "username": "root",
+  "password": "search@2017",
+  "table":
+    {
+      "name": "account",
+      "include": [
+        {
+          "bizid",
+          "name",
+          "usertype",
+          "status",
+          "black",
+          "fans"
+        }
+      ]
+    }
+}

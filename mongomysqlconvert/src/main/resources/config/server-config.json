@@ -1,7 +1,19 @@
 {
-  "mongodb_config": "mongodb_mv_ring",
-  "mysql_config": "mysql_mv_ring",
-  "threads":2,
-  "minDataNum": 50000,
-  "step": 50000
+  "convert": [
+    {
+      "mongodb_config": "mongodb_mv_ring",
+      "mysql_config": "mysql_mv_ring",
+      "threads": 2,
+      "minDataNum": 50000,
+      "step": 50000
+    },
+    {
+      "mongodb_config": "mongodb_user",
+      "mysql_config": "mysql_user",
+      "threads": 2,
+      "minDataNum": 50000,
+      "step": 50000
+    }
+  ]
 }
+
